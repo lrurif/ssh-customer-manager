@@ -1,0 +1,63 @@
+body {
+	background-color: #fff;
+}
+.login {
+	width: 450px;
+	height: 410px;
+	background-color: #fff;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 10px;
+	padding: 0 40px;
+	box-sizing: border-box;
+	z-index: 1000;
+}
+.login-title {
+	margin-top: 60px;
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+	font-family: Î¢ÈíÑÅºÚ,ËÎÌå,arial narrow,Helvetica,sans-serif;
+}
+.login-form {
+	margin-top: 50px;
+}
+.icon {
+	margin-right: 10px;
+}
+.icon .iconfont {
+	font-size: 20px;
+}
+.user-name,.user-password {
+	margin-bottom: 30px;
+}
+input[type=text],input[type=password]{
+	border: none;
+	border-bottom: 1px solid #ddd;
+	padding: 7px 15px;
+	width: 90%;
+}
+.login-btn {
+	width: 100%;
+	height: 50px;
+	background-color: #1e90ff;
+	color: #fff;
+	line-height: 50px;
+	font-size: 20px;
+	cursor: pointer;
+	border: none;
+	transition: background-color 1s ease;
+}
+.login-btn:hover {
+	background-color: #177ee2;
+}
+.img {
+	width:100%;
+	height: 100%;
+	background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1593853237544&di=69c211725b00ab49ab46049bd35bbea8&imgtype=0&src=http%3A%2F%2Fdpic.tiankong.com%2F7d%2Fxv%2FQJ8863414476.jpg");
+	background-size: 100% 100%;
+	filter: blur(8px);
+}
+

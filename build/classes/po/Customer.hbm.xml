@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="po">
+	<class name="Customer" table="customer">
+		<id name="cust_id" column="cust_id">
+			<generator class="native">
+			</generator>
+		</id>
+		<property name="cust_name" />
+		<!-- <property name="cust_user_id" /> -->
+		<property name="cust_create_id" />
+		<many-to-one name="cust_source_obj" class="po.BaseDict" fetch="join" lazy="false">
+			<column name="cust_source"></column>
+		</many-to-one>
+		<many-to-one name="cust_industry_obj" class="po.BaseDict" fetch="join" lazy="false">
+			<column name="cust_industry"></column>
+		</many-to-one>
+		<many-to-one name="cust_level_obj" class="po.BaseDict" fetch="join" lazy="false">
+			<column name="cust_level"></column>
+		</many-to-one>
+		<property name="cust_linkman" />
+		<property name="cust_phone" />
+		<property name="cust_mobile" />
+		<property name="cust_zipcode" />
+		<property name="cust_address" />
+		<property name="cust_createtime" />
+		<property name="cust_source" type="int"  update="false"
+                          insert="false" />
+		<property name="cust_industry" type="int"  update="false"
+                          insert="false" />
+		<property name="cust_level" type="int"   update="false"
+                          insert="false"/>
+		<!-- <property name="start" />
+		<property name="rows" /> -->
+	</class>
+	
+</hibernate-mapping>

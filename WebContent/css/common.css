@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 1922832 */
+  src: url('//at.alicdn.com/t/font_1922832_zgnpx9ouok.eot');
+  src: url('//at.alicdn.com/t/font_1922832_zgnpx9ouok.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1922832_zgnpx9ouok.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1922832_zgnpx9ouok.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1922832_zgnpx9ouok.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1922832_zgnpx9ouok.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-user:before {
+	content: "\e699";
+}
+.icon-user-login:before {
+	content: "\e607";
+}
+.icon-password-login:before {
+	content: "\e691";
+}
+.icon-leave:before {
+	content: "\e646";
+}
+.icon-arrow:before {
+	content: "\e66a";
+}
+.icon-error:before {
+	content: "\e600";
+}
+
+
+/* 清除浮动 */
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear:both;
+  visibility: hidden;
+}
+.clearfix {
+  *zoom: 1;
+}
+/* 解决出现滚动条时抖动问题 */
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+body {
+  width: 100vw;
+  overflow: hidden;
+  min-height: 100vh;
+  padding-right: calc(100vw - 100%);
+}
+/*
+ *自适应img 
+ */
+img.contain {
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  object-fit: contain;
+  border: 1px solid #FFF;
+}
+
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td { margin:0; padding:0; }  
+body, button, input, select, textarea { font:12px/1.5tahoma, arial, \5b8b\4f53; font-family: 微软雅黑,宋体,arial narrow,Helvetica,sans-serif;}  
+h1, h2, h3, h4, h5, h6{ font-size:100%; }  
+address, cite, dfn, em, var { font-style:normal; }  
+code, kbd, pre, samp { font-family:couriernew, courier, monospace; }  
+small{ font-size:12px; }  
+ul, ol { list-style:none; }  
+a { text-decoration:none;color:#2D8cF0; }  
+sup { vertical-align:text-top; }  
+sub{ vertical-align:text-bottom; }  
+legend { color:#000; }  
+fieldset, img { border:0; }  
+button, input, select, textarea { font-size:100%; }  
+button {
+  cursor: pointer;
+  outline: none;
+}
